@@ -16,8 +16,8 @@ export class TodosController {
     return this.todosService.findAll();
   }
 
-  @Patch()
-  async updateTask(@Param('id') id: string, @Body() infoToUpdate) {
+  @Patch(':id')
+  updateTask(@Param('id') id: string, @Body() infoToUpdate) {
     return this.todosService.updateTask(+id, infoToUpdate);
   }
 
