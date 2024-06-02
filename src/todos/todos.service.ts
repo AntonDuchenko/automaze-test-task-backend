@@ -17,7 +17,11 @@ export class TodosService {
   }
 
   findAll() {
-    return this.prisma.todo.findMany();
+    return this.prisma.todo.findMany({
+      orderBy: {
+        id: "asc",
+      }
+    });
   }
 
   remove(id: number) {
@@ -35,7 +39,7 @@ export class TodosService {
       },
       data: {
         ...updateTodoDto,
-      }
+      },
     });
   }
 }
