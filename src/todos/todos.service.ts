@@ -10,8 +10,7 @@ export class TodosService {
   create(createTodoDto: CreateTodoDto) {
     return this.prisma.todo.create({
       data: {
-        ...createTodoDto,
-        completed: false,
+        ...createTodoDto
       },
     });
   }
