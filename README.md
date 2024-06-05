@@ -20,8 +20,8 @@ This part of the application is responsible for handling requests from the clien
 ### Running the Server
 
 1. Open the terminal.
-2. Clone the repository: `git clone https://github.com/AntonDuchenko/automaze-test-task-frontend`
-3. Navigate to the directory where the server-side code is located: `cd automaze-test-task-frontend`
+2. Clone the repository: `git clone https://github.com/AntonDuchenko/automaze-test-task-backend`
+3. Navigate to the directory where the server-side code is located: `cd automaze-test-task-backend`
 4. Run the command `npm install` to install all necessary dependencies.
 5. Create a `.env` file in the root directory of your project.
 6. Add the following line to the `.env` file: `DATABASE_URL="your db_url connection"`.
