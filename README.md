@@ -23,5 +23,7 @@ This part of the application is responsible for handling requests from the clien
 2. Navigate to the directory where the server-side code is located.
 3. Run the command `npm install` to install all necessary dependencies.
 5. To do migrations for the database, use the command `npx prisma migrate dev --name init`.
-6. Open another terminal and run the command `npm start:dev` to start the server.
-7. After a successful startup, the server will be available at [http://localhost:5000/](http://localhost:5000/).
+6. Create a `.env` file in the root directory of your project.
+7. Add the following line to the `.env` file: `DATABASE_URL="your db_url connection"`.
+8. Open another terminal and run the command `npm start:dev` to start the server.
+9. After a successful startup, the server will be available at [http://localhost:5000/](http://localhost:5000/).
